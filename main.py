@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.utils.executor import start_webhook
 import logging
 
-API_TOKEN = os.getenv("TELEGRAM_TOKEN")
+API_TOKEN = os.getenv("7446181855:AAHESpa1eegvbrE_8qsIpr41iiKqqRtm6jA")
 WEBHOOK_PATH = "/webhook"
 WEBHOOK_URL = f"{os.getenv('RENDER_EXTERNAL_URL')}{WEBHOOK_PATH}"
 WEBAPP_HOST = "0.0.0.0"
@@ -28,7 +28,7 @@ def webhook_handler():
     for k, v in data.items():
         text += f"<b>{k}:</b> {v}\n"
     # Отправить сообщение
-    chat_id = os.getenv("TARGET_CHAT_ID")
+    chat_id = os.getenv("-1002778652070")
     bot.send_message(chat_id, text, parse_mode="HTML")
     return "OK", 200
 
